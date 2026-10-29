@@ -22,3 +22,15 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+  restaurant-management-app/
+├── backend/   (Node.js, Express, MongoDB, Multer code)
+└── frontend/  (React.js Vite app code)  
+
+
+node_modules/
+frontend/node_modules/
+backend/node_modules/
+backend/uploads/
+.env
+dist/

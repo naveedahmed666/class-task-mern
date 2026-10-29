@@ -52,8 +52,10 @@ function App() {
             loadData();
             alert('Category added successfully!');
         } catch (error) {
-            alert('Error adding category: ' + error.response?.data?.message || error.message);
-        }
+    console.error("Full Error Object:", error);
+    const errorMsg = error.response?.data?.error || error.response?.data?.message || error.message;
+    alert('Error adding category: ' + errorMsg);
+}
     };
 
     // Handle Food Submission

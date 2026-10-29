@@ -1,10 +1,10 @@
 import axios from 'axios';
 
 const API = axios.create({
-    baseURL: 'http://localhost:5000/api',
+    baseURL: 'http://localhost:4000/api',
 });
 
-export const BACKEND_URL = 'http://localhost:5000';
+export const BACKEND_URL = 'http://localhost:4000';
 
 // Category APIs
 export const fetchCategories = () => API.get('/categories');
